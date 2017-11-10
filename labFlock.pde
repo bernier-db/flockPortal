@@ -5,7 +5,7 @@ final char portalKey = ' ';
 
 
 void setup() {
-  size(640, 360);
+  size(800, 600);
   flock = new Flock();
    portals[0] = new Portal(true);
   portals[1] = new Portal(false);
@@ -13,9 +13,6 @@ void setup() {
   for (int i = 0; i < 150; i++) {
     flock.addBoid(new Boid(width/2,height/2, portals));
   }
-  
- 
-  
 }
 
 void draw() {
